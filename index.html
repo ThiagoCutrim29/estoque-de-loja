@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTOQUE DE LOJA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1> ESTOQUE DA LOJA</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2> Lista de carros</h2>
+        </div>
+        <div class="card">
+            <div class="lineInput">
+                <label>carro</label>
+                <input type="text" id="carro" placeholder="nome do carro">
+            </div>
+            <div class="lineInput">
+                <label>valor</label>
+                <input type="number" id="preco" placeholder="valor do carro">
+            </div>
+            <button onclick="carros.salvar()" id="btn1">SALVAR</button>
+            <button onclick="carros.cancelar()">CANCELAR</button>
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>VALOR</th>
+                    <th>ACOES</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html> 
